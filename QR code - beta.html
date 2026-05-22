@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Fullscreen</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0b1d2a, #1e2f45);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .frame {
+      width: 710px;
+      height: 750px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 20px 0px rgba(0,0,0,0.5);
+      position: relative;
+      background: #1e2f45;
+    }
+
+    iframe {
+      position: absolute;
+      top: -95px;   /* adjust vertical crop */
+      left: -0px;  /* adjust horizontal crop */
+      width: 100%; /* zoom level */
+      height:1140px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="frame">
+  <iframe src="https://efftime.com/break_log/gate.php"></iframe>
+</div>
+
+</body>
+</html>
